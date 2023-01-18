@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400;500;600&family=Inter&family=Poppins&family=Roboto&family=Roboto+Mono:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Mono';
+    font-size: 18px;
+}
+body{
+    height: 100vh;
+    background-color: #5e8b7e;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.rotate{
+    transform: rotate(90deg);
+    font-size: 28px;
+}
+.container{
+    max-width: 450px;
+    column-gap: 5px;
+    background-color: #fff;
+    padding: 70px 50px 70px 0;
+    box-shadow: 0 20px 25px rgba(0, 0, blue, alpha);
+    display: flex;
+    justify-content: space-between;
+    border-radius: 5px;
+}
+.cf{
+    width: 45%;
+}
+input{
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    border: 2px solid #d2d2d2;
+    outline: none;
+    margin-top: 8px;
+    padding: 0 10px;
+
+}
+@media (max-width:450px){
+    .container{
+        display: block;
+        max-width: 400px;
+        margin: 20px;
+        padding: 70px 50px;
+    }
+    .rotate{
+        transform: rotate(0deg);
+    }
+    .cf{
+        width: 60%;
+    }
+}
